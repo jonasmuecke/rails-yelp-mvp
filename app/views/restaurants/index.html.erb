@@ -1,0 +1,7 @@
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><a href=<%="http://localhost:3000/restaurants/#{restaurant[:id]}"%>><%= restaurant.name %> <%= restaurant.category %></li>
+  <% end %>
+</ul>
+
+<a href="http://localhost:3000/restaurants/new">+ Add new Restaurant</a>
